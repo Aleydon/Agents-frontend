@@ -1,6 +1,15 @@
-# Agents Frontend
+<h2 align='center'>:earth_americas: Agents (frontend) :earth_americas:</h2>
 
-This project is the frontend for the Agents application, built with a modern and robust stack including React, Vite, and TypeScript.
+<p align="center">
+<img alt="react-logo" src="https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB" />
+<img alt="typescript-logo" src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff" />
+<img alt="javascript-logo" src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000" />
+<img alt="react-router-logo" src="https://img.shields.io/badge/React_Router-CA4245?logo=react-router&logoColor=white" />
+<img alt="tailwindcss-logo" src="https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?logo=tailwind-css&logoColor=white" />
+<img alt="chaddn-logo" src="https://img.shields.io/badge/shadcn%2Fui-000?logo=shadcnui&logoColor=fff" />
+<img alt="gemini-logo" src="https://img.shields.io/badge/google%20gemini-8E75B2?style=for-the-badge&logo=google%20gemini&logoColor=white" />
+<img alt="postgres-logo" src="https://img.shields.io/badge/Postgres-%23316192.svg?logo=postgresql&logoColor=white" />
+</p>
 
 ## Features
 
