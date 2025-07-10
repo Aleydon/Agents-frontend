@@ -19,6 +19,7 @@
 	"dependencies": {
 		"@radix-ui/react-slot": "^1.2.3",
 		"@tailwindcss/vite": "^4.1.11",
+		"@tanstack/react-query": "^5.82.0",
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
 		"lucide-react": "^0.525.0",
@@ -37,8 +38,10 @@
 		"@commitlint/cli": "^19.8.1",
 		"@commitlint/config-conventional": "^19.8.1",
 		"@jest/globals": "^29.7.0",
+		"@storybook/addon-docs": "^9.0.15",
 		"@storybook/addon-onboarding": "^9.0.15",
 		"@storybook/react-vite": "^9.0.15",
+		"@tanstack/eslint-plugin-query": "^5.81.2",
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^16.0.1",
 		"@testing-library/user-event": "^14.4.3",
@@ -77,8 +80,7 @@
 		"ts-node": "^10.9.2",
 		"tw-animate-css": "^1.3.5",
 		"typescript": "^4.7.4 ",
-		"vite": "^7.0.0",
-		"@storybook/addon-docs": "^9.0.15"
+		"vite": "^7.0.0"
 	},
 	"resolutions": {
 		"@types/react": "19.0.10",

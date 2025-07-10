@@ -8,7 +8,8 @@
 		"standard-with-typescript",
 		"plugin:react/recommended",
 		"plugin:prettier/recommended",
-		"plugin:storybook/recommended"
+		"plugin:storybook/recommended",
+		"plugin:@tanstack/query/recommended"
 	],
 	"settings": {
 		"react": {
@@ -19,7 +20,13 @@
 		"ecmaVersion": "latest",
 		"sourceType": "module"
 	},
-	"plugins": ["react", "prettier", "jest", "simple-import-sort"],
+	"plugins": [
+		"react",
+		"prettier",
+		"jest",
+		"simple-import-sort",
+		"@tanstack/query"
+	],
 	"rules": {
 		"prettier/prettier": [
 			"error",

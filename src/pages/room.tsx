@@ -1,4 +1,4 @@
-export function Room() {
+export function RoomDetails() {
 	return (
 		<div>
 			<h3>Room Details</h3>

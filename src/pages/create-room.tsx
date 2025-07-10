@@ -1,9 +1,11 @@
+import { Link } from 'react-router';
+
 export function CreateRoom() {
 	return (
 		<div className="h-screen w-full">
-			<a className="text-white underline" href="/room">
+			<Link className="text-white underline" to="/room">
 				Acessar sala
-			</a>
+			</Link>
 		</div>
 	);
 }
