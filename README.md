@@ -1,4 +1,4 @@
-<h2 align='center'>:earth_americas: Agents (frontend) :earth_americas:</h2>
+<h2 align='center'>:earth_americas: Agents :earth_americas:</h2>
 
 <p align="center">
 <img alt="react-logo" src="https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB" />
