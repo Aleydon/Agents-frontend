@@ -1,137 +1,107 @@
-<h2 align='center'>:earth_americas: Vite.js Template :earth_americas:</h2>
+# Agents Frontend
 
-<p align="center">
-  <br>
-  <img width="900" src="./assets/React-Vite.png" alt="logo of React-Vite repository">
-  <br>
-  <br>
-</p>
+This project is the frontend for the Agents application, built with a modern and robust stack including React, Vite, and TypeScript.
 
-## :pushpin: Requirements: :pushpin:
+## Features
 
-NodeJs: :link: https://nodejs.org/en/
+- **Modern Framework:** Built with the latest React 19 features.
+- **Fast Development:** Vite for near-instant server start and Hot Module Replacement (HMR).
+- **Type Safety:** Fully typed with TypeScript.
+- **Utility-First Styling:** Styled with Tailwind CSS for rapid UI development.
+- **Component-Driven:** Organized with a clear component structure and showcased with Storybook.
+- **Code Quality:** Enforced code quality and style with ESLint and Prettier.
+- **Standardized Commits:** Uses Commitizen and Commitlint for conventional commit messages.
+- **Automated Checks:** Husky and lint-staged for running pre-commit checks.
 
----
+## Tech Stack
 
-#### :arrow_forward: Get Started:
+- **Framework:** [React 19](https://react.dev/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components:** [Radix UI](https://www.radix-ui.com/) & [Lucide React](https://lucide.dev/) for icons.
+- **Routing:** [React Router](https://reactrouter.com/)
+- **Data Fetching:** [TanStack Query](https://tanstack.com/query/latest)
+- **Testing:** [Jest](https://jestjs.io/) & [React Testing Library](https://testing-library.com/)
+- **Component Development:** [Storybook](https://storybook.js.org/)
+- **Code Quality:** [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/)
+- **Git Hooks:** [Husky](https://typicode.github.io/husky/) & [lint-staged](https://github.com/okonet/lint-staged)
+- **Commit Messages:** [Commitizen](http://commitizen.github.io/cz-cli/) & [Commitlint](https://commitlint.js.org/)
 
-1. Clone this repo
+## Project Structure
 
-```sh
-git clone https://github.com/Aleydon/React-Vite.git
+The project follows a standard structure for React applications, with a clear separation of concerns.
+
+```
+/src
+├── components/         # Shared and UI components
+│   └── ui/             # Base UI elements (Button, Input, etc.)
+├── lib/                # Utility functions and helpers
+├── pages/              # Page components corresponding to routes
+├── App.tsx             # Main App component with routing setup
+└── main.tsx            # Application entry point
 ```
 
-2. Install NPM packages
+## Getting Started
 
-```sh
-npm install or yarn install
+Follow these instructions to get the project up and running on your local machine.
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- [Bun](https://bun.sh/) (or you can use `npm` or `yarn`)
+
+### Installation
+
+1.  **Clone the repository:**
+
+    ```bash
+    git clone <repository-url>
+    cd agents-frontend
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    bun install
+    ```
+
+## Available Scripts
+
+The `package.json` file includes several scripts to help with development:
+
+- `bun run dev`: Starts the development server with HMR at `http://localhost:5173`.
+- `bun run build`: Compiles and bundles the application for production in the `dist` folder.
+- `bun run preview`: Serves the production build locally to preview it.
+- `bun run test`: Runs the test suite using Jest.
+- `bun run test:watch`: Runs the tests in interactive watch mode.
+- `bun run lint`: Lints the codebase with ESLint and attempts to fix issues.
+- `bun run storybook`: Starts the Storybook server to view and develop components in isolation.
+- `bun run build-storybook`: Builds a static version of the Storybook.
+
+## Code Quality & Commits
+
+### Linting & Formatting
+
+This project uses **ESLint** for identifying and reporting on patterns in JavaScript/TypeScript and **Prettier** for code formatting. These are configured to run automatically on every commit.
+
+You can also run them manually:
+
+```bash
+# Run ESLint and fix issues
+bun run lint
+
+# Format all files with Prettier
+bunx prettier . --write
 ```
 
-3.  Run this project
+### Committing
 
-```sh
-npm run dev or yarn dev
+This project enforces **Conventional Commits**. A pre-commit hook will lint and format your staged files. To create a commit, it's recommended to use the `commit` script:
+
+```bash
+bun run commit
 ```
 
----
-
-<h2>Template configuration:</h2>
-
-- Jest + Testing Library for automated testing. :link: https://jestjs.io/ + https://testing-library.com/
-- Storybook for component documentation. :link: https://storybook.js.org/
-- Eslint + Prettier for code standardization and formatting. :link: https://eslint.org/ + https://prettier.io/
-- Typescript for typing. :link: https://www.typescriptlang.org/
-- Tailwind Css for styling components. :link: https://tailwindcss.com/
-- HuskyJs for automatically lint your commit messages, code, and run tests upon committing or pushing. :link: https://typicode.github.io/husky/
-
----
-
-<h2>Tests + Storybook:</h2>
-
-- How to run tests:
-
-```sh
-npm run test or npm run test:watch
-```
-
-It has an example of tests with Jest + Testing-Library in _src/App.spec.tsx_
-
-```ts
-import { render, screen } from '@testing-library/react';
-
-import App from './App';
-
-describe('App Component', () => {
-	it('should get the text hello world', () => {
-		render(<App />);
-		const hello = screen.getByText('Hello World');
-		expect(hello).toBeDefined();
-	});
-
-	it('should get the text hello world in the component s heading', () => {
-		render(<App />);
-		const heading = screen.getByRole('heading', {
-			name: 'Hello World'
-		});
-		expect(heading).toBeInTheDocument();
-	});
-
-	it('must get the link from the App component', () => {
-		render(<App />);
-		const link = screen.getByRole('link', { name: 'github.com/Aleydon' });
-		expect(link).toBeDefined();
-		expect(link).toHaveAttribute('target', '_blank');
-		expect(link).toHaveAttribute('aria-label', 'github.com/Aleydon');
-	});
-});
-```
-
----
-
-- How to run storybook:
-
-```sh
-npm run storybook or yarn storybook
-```
-
-<p align="center">
-  <br>
-  <img width="1100" src="./assets/storybok_screen_shot.png" alt="storybook running">
-  <br>
-  <br>
-</p>
-
-also has an example of using Storybook in the Text component in _src/components/Text/text.stories.tsx_
-
-```ts
-import type { Meta, StoryObj } from '@storybook/react';
-
-import Text, { type TextProps } from '.';
-
-const text: Meta<typeof Text> = {
-	component: Text,
-	title: 'Components/Text'
-};
-
-export default text;
-
-export const Small: StoryObj<TextProps> = {
-	args: {
-		size: 'small',
-		children: 'Small Text'
-	}
-};
-
-export const Medium: StoryObj<TextProps> = {
-	args: {
-		size: 'medium',
-		children: 'Medium Text'
-	}
-};
-export const Large: StoryObj<TextProps> = {
-	args: {
-		size: 'large',
-		children: 'Large Text'
-	}
-};
-```
+This will launch an interactive prompt (Commitizen) that guides you through creating a compliant commit message. This ensures a clean and understandable commit history.
